@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Font -Awesome link-->
+    <script src="https://kit.fontawesome.com/73353ec0db.js" crossorigin="anonymous"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="button-container">
+                <button class="top-btn active" id="log-btn">Login</button>
+                <button class="top-btn" id="sign-btn">Sign Up</button>
+            </div>
+             <div class="login active">            
+                <h1>Login</h1>
+                <div class="form-wrapper">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="email" id="email" placeholder=" Username or Email">
+                    <p class="text-error">
+                        Please Enter The Username or Email
+                    </p>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <p class="text-error text-pass-error">
+                        Password should be greater than 8
+                    </p>
+                </div>
+                 <button class="btn-login">
+                    Login
+                 </button>
+            <a href="#" class="bottom-link">Forget Password?</a>
+               </div>
+            </div>
+            <div class="signup">
+                <h1>Sign Up</h1>
+                <div class="form-wrapper">
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <p class="text-error">
+                            Please Enter Name
+                        </p>
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" name="email" id="email-1" placeholder="Email">
+                        <p class="text-error">
+                            Please Enter Username or Email
+                        </p>
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" id="password-1" placeholder="Password">
+                        <p class="text-error text-pass-error">
+                            Password should be greater than 8
+                        </p>
+                    </div>
+                    <button class="btn-login sign-btn">
+                        Sign-up
+                    </button>
+                    <p class="text-error">
+                        Please Fill All The Fields
+                    </p>
+                </div>
+            </div>
+            <ul class="social-list">
+                <li><a href="#" class="social-link"><i class="fa-brands fa-google"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
